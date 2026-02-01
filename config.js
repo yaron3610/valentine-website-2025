@@ -5,92 +5,84 @@
 const CONFIG = {
 
     // השם של הוולנטיין שיופיע בכותרות
-    valentineName: "תמריי",
+    valentineName: "תמרי",
 
     // הכותרת שמופיעה בלשונית הדפדפן
-    // אפשר להשתמש באימוג'ים 💝 💖 💗 💓 💞 💕
-    pageTitle: "את תהיי הוולנטיין שלי? 💝",
+    pageTitle: "תהיי הוולנטיין שלי? 💝",
 
     // אימוג'ים מרחפים ברקע
-    // אפשר למצוא עוד כאן: https://emojipedia.org
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'], // אימוג'י לבבות
-        bears: ['🧸', '🐻']                    // דובים חמודים
+        hearts: ['❤️', '💖', '💝', '💗', '💓'],
+        bears: ['🧸', '🐻']
     },
 
     // שאלות ותשובות
-    // אפשר להתאים כל שאלה ואת הכפתורים שלה
     questions: {
 
         // שאלה ראשונה
         first: {
-            text: "את מחבבת אותי?",
-            yesBtn: "כן",
+            text: "את אוהבת אותי?",
+            yesBtn: "כן 💖",
             noBtn: "לא",
-            secretAnswer: "אני לא מחבבת — אני אוהבתתתתת 💕"
+            secretAnswer: "לא סתם אוהבת — ממש אוהבת 💕"
         },
 
         // שאלה שנייה (מד אהבה)
         second: {
-            text: "כמה את אוהבת אותי?",
-            startText: "ככה!",
+            text: "עד כמה את אוהבת אותי?",
+            startText: "בערך ככה…",
             nextBtn: "הבא ❤️"
         },
 
         // השאלה הגדולה
         third: {
-            text: "את תהיי הוולנטיין שלי ב־14 בפברואר 2026? 🌹",
-            yesBtn: "כן!!! 💖",
+            text: "רוצה להיות הוולנטיין שלי ב־14 בפברואר 2026? 🌹",
+            yesBtn: "כן!!! 💕",
             noBtn: "לא"
         }
     },
 
     // הודעות מד האהבה
-    // מופיעות לפי כמה שמזיזים את המד
     loveMessages: {
-        extreme: "וואאאאו 😱💝 את אוהבת אותי ככה?!",
-        high: "לאינסוף ומעבר לו! 🚀💝",
-        normal: "ומעבר לזה 🥰"
+        extreme: "רגע… זה המון אהבה 😳💝",
+        high: "וואו, זה כבר אינסוף 💖🚀",
+        normal: "יותר ממה שציפיתי 🥰"
     },
 
-    // הודעות שמופיעות אחרי שהיא אומרת כן
+    // הודעות אחרי שהיא אומרת כן
     celebration: {
-        title: "יששש! אני הבן אדם הכי בר מזל בעולם! 🎉💝💓",
-        message: "עכשיו בואי לקחת את המתנה שלך — חיבוק ענק ונשיקה גדולה 💋",
+        title: "איזו שמחה! זכיתי בך 💝🎉",
+        message: "עכשיו בואי לקחת את המתנה שלך — חיבוק חזק ונשיקה 💋",
         emojis: "🎁💖🤗💝💋❤️💕"
     },
 
-    // ערכת צבעים לאתר
-    // אפשר למצוא שילובים יפים כאן:
-    // https://colorhunt.co או https://coolors.co
+    // צבעי האתר
     colors: {
-        backgroundStart: "#ffafbd",   // התחלת גרדיאנט
-        backgroundEnd: "#ffc3a0",     // סוף גרדיאנט
-        buttonBackground: "#ff6b6b",  // צבע כפתורים
-        buttonHover: "#ff8787",       // צבע מעבר עכבר
-        textColor: "#ff4757"          // צבע טקסט
+        backgroundStart: "#ffafbd",
+        backgroundEnd: "#ffc3a0",
+        buttonBackground: "#ff6b6b",
+        buttonHover: "#ff8787",
+        textColor: "#ff4757"
     },
 
-    // הגדרות אנימציה
-    // אפשר להאיץ או להאט לפי הטעם
+    // אנימציות
     animations: {
-        floatDuration: "15s",    // משך ריחוף הלבבות
-        floatDistance: "50px",   // תזוזה לצדדים
-        bounceSpeed: "0.5s",     // מהירות קפיצה
-        heartExplosionSize: 1.5  // גודל פיצוץ הלבבות
+        floatDuration: "15s",
+        floatDistance: "50px",
+        bounceSpeed: "0.5s",
+        heartExplosionSize: 1.5
     },
 
-    // מוזיקת רקע (אופציונלי)
-    // יש לוודא שיש רישיון לשימוש
+    // מוזיקת רקע
     music: {
-        enabled: true,           // הפעלת מוזיקה
-        autoplay: true,          // ניגון אוטומטי (לא תמיד עובד בדפדפנים)
+        enabled: true,
+        autoplay: true,
         musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3",
         startText: "🎵 נגן מוזיקה",
         stopText: "🔇 עצור מוזיקה",
-        volume: 0.5              // עוצמת שמע (0 עד 1)
+        volume: 0.5
     }
 };
 
-// לא לשנות שום דבר מתחת לשורה הזו אלא אם אתה יודע מה אתה עושה
+// לא לשנות שום דבר מתחת לשורה הזו
 window.VALENTINE_CONFIG = CONFIG;
