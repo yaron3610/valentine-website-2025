@@ -50,7 +50,7 @@ const CONFIG = {
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "I'll come to pick you up at 18:30, were going to notch!",
+        message: "I’ll pick you up at 18:30 — we’re going to Notch!",
         emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
     },
 
